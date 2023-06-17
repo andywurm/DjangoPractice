@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import generics
+from .serializers import NumbersSerializer
+from .models import Numbers
 
 # Create your views here.
-def main(request):
-    return HttpResponse("<h1>Hello</h1>")
+class NumbersView(generics.CreateAPIView):
+    queryset = Numbers.objects.all()
+    serializer_class = NumbersSerializer
+
