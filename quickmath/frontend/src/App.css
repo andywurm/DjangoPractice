@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.inputs{
+  margin: 0 1%;
+  width: 100px;
+}
+
+.selects{
+  width: 100px;
+}
