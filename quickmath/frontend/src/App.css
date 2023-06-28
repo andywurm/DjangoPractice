@@ -11,3 +11,23 @@
 .selects{
   width: 100px;
 }
+
+.btnContainer{
+  margin: 3% 0;
+}
+
+.btn{
+  padding: .8% 2%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(56, 124, 183);
+  color: white;
+  font-weight: 600;
+}
+
+.ans{
+  margin: 3% 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}

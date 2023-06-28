@@ -13,15 +13,15 @@ class NumbersView(generics.CreateAPIView):
 class CreateNumbersView(APIView):
     serializer_class = CreateNumbersSerializer
     
-    def post(self, request, format=None):
+    def post(self, request):
 
         serializer = self.serializer_class(data=request.data)
         
         if serializer.is_valid():
+
             firstNumber = serializer.data.get('firstNumber')
             secondNumber = serializer.data.get('secondNumber')
             mathType = serializer.data.get('mathType')
-            
             
             def doMath(num1, num2, type):
                 ans = 0
