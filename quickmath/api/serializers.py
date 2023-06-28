@@ -4,4 +4,9 @@ from .models import Numbers
 class NumbersSerializer(serializers.ModelSerializer):
     class Meta: 
         model = Numbers
-        fields = ('id', 'firstNumber', 'secondNumber', 'mathType', 'answer')
+        fields = ('firstNumber', 'secondNumber', 'mathType', 'answer')
+
+class CreateNumbersSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Numbers
+        fields = ('firstNumber', 'secondNumber', 'mathType')
